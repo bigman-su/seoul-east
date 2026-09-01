@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제43회기 서울동지방회 9월 월례회의 건</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #eeeeee;
+      font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+      color: #222;
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #ddd;
+      padding: 12px 16px;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,.08);
+    }
+    .topbar h1 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    button, .download {
+      border: 0;
+      border-radius: 7px;
+      padding: 9px 14px;
+      background: #174a88;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .page {
+      width: min(960px, calc(100% - 24px));
+      margin: 24px auto 40px;
+      background: white;
+      padding: 18px;
+      box-shadow: 0 2px 14px rgba(0,0,0,.12);
+    }
+    .page img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .notice {
+      max-width: 960px;
+      margin: 0 auto 28px;
+      padding: 0 12px;
+      color: #666;
+      text-align: center;
+      font-size: 13px;
+    }
+    @media print {
+      .topbar, .notice { display: none; }
+      body { background: white; }
+      .page {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>제43회기 서울동지방회 9월 월례회의 건</h1>
+    <div class="actions">
+      <button onclick="window.print()">인쇄 / PDF 저장</button>
+      <a class="download" href="seoul-east-area-notice.jpg" download>공문 이미지 저장</a>
+    </div>
+  </div>
+
+  <main class="page">
+    <img src="seoul-east-area-notice.jpg"
+         alt="예수교대한성결교회 서울동지방회 제43회기 9월 월례회 공문">
+  </main>
+
+  <p class="notice">
+    예수교대한성결교회 서울동지방회 공문을 웹에서 보기 위한 페이지입니다.
+  </p>
+</body>
+</html>
