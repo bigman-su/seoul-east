@@ -63,6 +63,72 @@
       text-align: center;
       font-size: 13px;
     }
+    .documents {
+      max-width: 960px;
+      margin: 0 auto 40px;
+      padding: 24px;
+      background: white;
+      box-shadow: 0 2px 14px rgba(0,0,0,.10);
+    }
+
+    .documents h2 {
+      margin: 0 0 8px;
+      text-align: center;
+      font-size: 20px;
+      color: #174a88;
+    }
+
+    .documents p {
+      margin: 0 0 20px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .document-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .document-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .document-title {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .document-download {
+      flex-shrink: 0;
+      padding: 9px 14px;
+      border-radius: 7px;
+      background: #174a88;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .document-item {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .document-download {
+        text-align: center;
+      }
+    }
+
+    @media print {
     @media print {
       .topbar, .notice { display: none; }
       body { background: white; }
@@ -90,7 +156,37 @@
   </main>
 
   <p class="notice">
-    예수교대한성결교회 서울동지방회 공문을 웹에서 보기 위한 페이지입니다.
+    예수교대한성결교회 서울동지방회 행정문서 및 공문을 웹에서 보기 위한 페이지입니다.
   </p>
+    <section class="documents">
+    <h2>📂 서울동지방회 행정자료실</h2>
+    <p>교단 행정업무에 필요한 서식을 다운로드할 수 있습니다.</p>
+
+    <div class="document-list">
+
+      <div class="document-item">
+        <div class="document-title">
+          📝 교직자 인사기록표
+        </div>
+        <a class="document-download"
+           href="documents/서식%204-61%20교직자인사기록표.hwp"
+           download>
+          한글파일 다운로드
+        </a>
+      </div>
+
+      <div class="document-item">
+        <div class="document-title">
+          📊 교세통계자료 보고서
+        </div>
+        <a class="document-download"
+           href="documents/서식%205-4%20교세통계자료보고서.hwp"
+           download>
+          한글파일 다운로드
+        </a>
+      </div>
+
+    </div>
+  </section>
 </body>
 </html>
