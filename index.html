@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>제43회기 서울동지방회 10월 월례회의 건</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       background: #eeeeee;
       font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
       color: #222;
     }
+
     .topbar {
       position: sticky;
       top: 0;
@@ -22,18 +27,22 @@
       text-align: center;
       box-shadow: 0 1px 5px rgba(0,0,0,.08);
     }
+
     .topbar h1 {
       margin: 0 0 8px;
       font-size: 16px;
       font-weight: 700;
     }
+
     .actions {
       display: flex;
       gap: 8px;
       justify-content: center;
       flex-wrap: wrap;
     }
-    button, .download {
+
+    button,
+    .download {
       border: 0;
       border-radius: 7px;
       padding: 9px 14px;
@@ -43,6 +52,7 @@
       cursor: pointer;
       text-decoration: none;
     }
+
     .page {
       width: min(960px, calc(100% - 24px));
       margin: 24px auto 40px;
@@ -50,11 +60,13 @@
       padding: 18px;
       box-shadow: 0 2px 14px rgba(0,0,0,.12);
     }
+
     .page img {
       display: block;
       width: 100%;
       height: auto;
     }
+
     .notice {
       max-width: 960px;
       margin: 0 auto 28px;
@@ -63,6 +75,7 @@
       text-align: center;
       font-size: 13px;
     }
+
     .documents {
       max-width: 960px;
       margin: 0 auto 40px;
@@ -129,9 +142,16 @@
     }
 
     @media print {
-    @media print {
-      .topbar, .notice { display: none; }
-      body { background: white; }
+      .topbar,
+      .notice,
+      .documents {
+        display: none;
+      }
+
+      body {
+        background: white;
+      }
+
       .page {
         width: 100%;
         margin: 0;
@@ -141,65 +161,85 @@
     }
   </style>
 </head>
+
 <body>
+
   <div class="topbar">
     <h1>제43회기 서울동지방회 10월 월례회의 건</h1>
-    <div class="actions">
-      <button onclick="window.print()">인쇄 / PDF 저장</button>
-      <a class="download" href="seoul-east-area-notice-43-12_10월 월례회공문.jpg" download>공문 이미지 저장</a>
 
-  <a class="download"
-     href="seoul-east-area-notice-43-12_10월 월례회공문.pdf"
-     download>
-    PDF 다운로드
-  </a>
-</div>
+    <div class="actions">
+
+      <button onclick="window.print()">
+        인쇄 / PDF 저장
+      </button>
+
+      <a class="download"
+         href="43-12_10월 월례회공문.jpg"
+         download>
+        공문 이미지 저장
+      </a>
+
+      <a class="download"
+         href="documents/43-12_10월 월례회공문.hwp"
+         download>
+        한글파일 다운로드
+      </a>
+
+    </div>
+  </div>
 
   <main class="page">
-    <img src="seoul-east-area-notice-43-12_10월 월례회공문.jpg"
+
+    <img src="43-12_10월 월례회공문.jpg"
          alt="예수교대한성결교회 서울동지방회 제43회기 10월 월례회 공문">
+
   </main>
 
   <p class="notice">
     예수교대한성결교회 서울동지방회 행정문서 및 공문을 웹에서 보기 위한 페이지입니다.
   </p>
-<div style="text-align:center; margin:20px 0 30px;">
-  <a class="download"
-     href="documents/43-12_10월 월례회공문.hwp"
-     download>
-    한글파일 다운로드
-  </a>
-</div>
-    
-    <section class="documents">
+
+  <section class="documents">
+
     <h2>📂 서울동지방회 행정자료실</h2>
-    <p>교단 행정업무에 필요한 서식을 다운로드할 수 있습니다.</p>
+
+    <p>
+      교단 행정업무에 필요한 서식을 다운로드할 수 있습니다.
+    </p>
 
     <div class="document-list">
 
       <div class="document-item">
+
         <div class="document-title">
           📝 교직자 인사기록표
         </div>
+
         <a class="document-download"
            href="documents/교직자인사기록표.hwp"
            download>
           한글파일 다운로드
         </a>
+
       </div>
 
       <div class="document-item">
+
         <div class="document-title">
           📊 교세통계자료 보고서
         </div>
+
         <a class="document-download"
            href="documents/교세통계자료보고서.hwp"
            download>
           한글파일 다운로드
         </a>
+
       </div>
 
     </div>
+
   </section>
+
 </body>
 </html>
