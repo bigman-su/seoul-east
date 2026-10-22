@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:title" content="제43회기 서울동지방회 10월 월례회 안내">
-<meta property="og:description" content="예수교대한성결교회 서울동지방회 10월 월례회 공문입니다">
-<meta property="og:image" content="https://bigman-su.github.io/seoul-east/43-12_10월 월례회공문.jpg">
-  
-  <title>제43회기 서울동지방회 10월 월례회 안내</title>
+  <meta property="og:title" content="2026 서울동지방회 가을세미나 안내">
+  <meta property="og:description" content="서울동지방회 가을세미나 공문, 일정표 및 교회별 분담금 안내">
+  <meta property="og:image" content="https://bigman-su.github.io/seoul-east/2026가을세미나-1.jpg">
+
+  <title>2026 서울동지방회 가을세미나 안내</title>
 
   <style>
     * {
@@ -34,8 +35,8 @@
     }
 
     .topbar h1 {
-      margin: 0 0 8px;
-      font-size: 16px;
+      margin: 0 0 10px;
+      font-size: 18px;
       font-weight: 700;
     }
 
@@ -50,26 +51,33 @@
     .download {
       border: 0;
       border-radius: 7px;
-      padding: 9px 14px;
+      padding: 10px 14px;
       background: #174a88;
       color: white;
       font-size: 14px;
       cursor: pointer;
       text-decoration: none;
+      display: inline-block;
     }
 
     .page {
       width: min(960px, calc(100% - 24px));
-      margin: 24px auto 40px;
+      margin: 24px auto;
       background: white;
       padding: 18px;
       box-shadow: 0 2px 14px rgba(0,0,0,.12);
+      break-after: page;
+      page-break-after: always;
     }
 
     .page img {
       display: block;
       width: 100%;
       height: auto;
+    }
+
+    .page:last-of-type {
+      margin-bottom: 40px;
     }
 
     .notice {
@@ -144,17 +152,26 @@
       .document-download {
         text-align: center;
       }
+
+      .page {
+        padding: 8px;
+      }
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 10mm;
     }
 
     @media print {
+      body {
+        background: white;
+      }
+
       .topbar,
       .notice,
       .documents {
-        display: none;
-      }
-
-      body {
-        background: white;
+        display: none !important;
       }
 
       .page {
@@ -162,6 +179,21 @@
         margin: 0;
         padding: 0;
         box-shadow: none;
+        break-after: page;
+        page-break-after: always;
+      }
+
+      .page:last-of-type {
+        margin-bottom: 0;
+        break-after: auto;
+        page-break-after: auto;
+      }
+
+      .page img {
+        width: 100%;
+        height: auto;
+        max-height: 277mm;
+        object-fit: contain;
       }
     }
   </style>
@@ -170,42 +202,49 @@
 <body>
 
   <div class="topbar">
-    <h1>제43회기 서울동지방회 10월 월례회의 건</h1>
+    <h1>2026 서울동지방회 가을세미나 안내</h1>
 
     <div class="actions">
-
       <button onclick="window.print()">
         인쇄 / PDF 저장
       </button>
 
       <a class="download"
-         href="43-12_10월 월례회공문.jpg"
+         href="2026가을세미나-1.jpg"
          download>
         공문 이미지 저장
       </a>
 
       <a class="download"
-         href="documents/43-12_10월 월례회공문.hwp"
+         href="2026가을세미나.hwp"
          download>
         한글파일 다운로드
       </a>
-
     </div>
   </div>
 
-  <main class="page">
+  <main>
+    <section class="page">
+      <img src="2026가을세미나-1.jpg"
+           alt="2026 서울동지방회 가을세미나 공문">
+    </section>
 
-    <img src="43-12_10월 월례회공문.jpg"
-         alt="예수교대한성결교회 서울동지방회 제43회기 10월 월례회 공문">
+    <section class="page">
+      <img src="2026가을세미나-2.jpg"
+           alt="2026 서울동지방회 가을세미나 일정표">
+    </section>
 
+    <section class="page">
+      <img src="2026가을세미나-3.jpg"
+           alt="2026 서울동지방회 가을세미나 교회별 분담금">
+    </section>
   </main>
 
   <p class="notice">
-    예수교대한성결교회 서울동지방회 행정문서 및 공문을 웹에서 보기 위한 페이지입니다.
+    예수교대한성결교회 서울동지방회 가을세미나 안내 자료입니다.
   </p>
 
   <section class="documents">
-
     <h2>📂 서울동지방회 행정자료실</h2>
 
     <p>
@@ -215,90 +254,49 @@
     <div class="document-list">
 
       <div class="document-item">
-
-        <div class="document-title">
-          📝 교직자 인사기록표
-        </div>
-
+        <div class="document-title">📝 교직자 인사기록표</div>
         <a class="document-download"
            href="documents/교직자인사기록표.hwp"
-           download>
-          한글파일 다운로드
-        </a>
-
+           download>한글파일 다운로드</a>
       </div>
 
       <div class="document-item">
-
-        <div class="document-title">
-          📊 교세통계자료 보고서
-        </div>
-
+        <div class="document-title">📊 교세통계자료 보고서</div>
         <a class="document-download"
            href="documents/교세통계자료보고서.hwp"
-           download>
-          한글파일 다운로드
-        </a>
-
+           download>한글파일 다운로드</a>
       </div>
 
-  <div class="document-item">
-
-        <div class="document-title">
-          📊 서식 4-52 장로장립청원서
-        </div>
-
+      <div class="document-item">
+        <div class="document-title">📊 서식 4-52 장로장립청원서</div>
         <a class="document-download"
            href="documents/서식 4-52 장로장립청원서.hwp"
-           download>
-          한글파일 다운로드
-        </a>
-
+           download>한글파일 다운로드</a>
       </div>
 
-  <div class="document-item">
-
-        <div class="document-title">
-          📊 서울동 안수집사 안수청원서
-        </div>
-
+      <div class="document-item">
+        <div class="document-title">📊 서울동 안수집사 안수청원서</div>
         <a class="document-download"
            href="documents/서울동 안수집사 안수청원서.hwp"
-           download>
-          한글파일 다운로드
-        </a>
-
+           download>한글파일 다운로드</a>
       </div>
 
-  <div class="document-item">
-
-        <div class="document-title">
-          📊 서울동 권사안수청원서
-        </div>
-
+      <div class="document-item">
+        <div class="document-title">📊 서울동 권사안수청원서</div>
         <a class="document-download"
            href="documents/서울동 권사안수청원서.hwp"
-           download>
-          한글파일 다운로드
-        </a>
-
+           download>한글파일 다운로드</a>
       </div>
-      
-          <div class="document-item">
 
-        <div class="document-title">
-          📚 총회 사무국 행정서식 자료실
-        </div>
-
+      <div class="document-item">
+        <div class="document-title">📚 총회 사무국 행정서식 자료실</div>
         <a class="document-download"
            href="https://sungkyul.org/NOS-Board/bbs.php?idx=admini1"
            target="_blank"
-           rel="noopener noreferrer">
-          행정서식 바로가기
-        </a>
+           rel="noopener noreferrer">행정서식 바로가기</a>
+      </div>
 
     </div>
-
   </section>
 
 </body>
